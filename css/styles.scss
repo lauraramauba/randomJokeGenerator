@@ -14,7 +14,7 @@ $white: #fff;
 body {
     background-color: $bgColor;
 
-    container {
+    main {
         margin: 0 auto;
         width: 70vw;
         height: 100vh;
@@ -58,3 +58,14 @@ body {
     }
 }
 
+@media (max-width: 480px) {
+    body main {
+        margin-top: 10%;
+        height: 100%;
+
+        #joke-display {
+            padding: 15px;
+            height: fit-content;
+        } 
+    }  
+}

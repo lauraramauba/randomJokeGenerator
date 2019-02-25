@@ -6,7 +6,7 @@
 
 body {
   background-color: #EE6C4D; }
-  body container {
+  body main {
     margin: 0 auto;
     width: 70vw;
     height: 100vh;
@@ -15,11 +15,11 @@ body {
     justify-content: center;
     align-items: flex-start;
     font-family: 'Lato', sans-serif; }
-    body container h1 {
+    body main h1 {
       margin-bottom: 15px;
       font-size: 2.5rem;
       color: #293241; }
-    body container #joke-display {
+    body main #joke-display {
       padding: 50px;
       border-radius: 10px;
       width: 70vw;
@@ -30,7 +30,7 @@ body {
       align-items: center;
       background-color: #fff;
       color: #3b485e; }
-    body container #joke-button {
+    body main #joke-button {
       width: 150px;
       height: 40px;
       border: none;
@@ -40,5 +40,13 @@ body {
       cursor: pointer;
       background-color: #3b485e;
       color: #fff; }
+
+@media (max-width: 480px) {
+  body main {
+    margin-top: 10%;
+    height: 100%; }
+    body main #joke-display {
+      padding: 15px;
+      height: fit-content; } }
 
 /*# sourceMappingURL=styles.css.map */
